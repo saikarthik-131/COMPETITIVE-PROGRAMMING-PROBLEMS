@@ -1,0 +1,52 @@
+/*326. Power of Three
+Easy
+
+640
+
+1658
+
+Add to List
+
+Share
+Given an integer n, return true if it is a power of three. Otherwise, return false.
+
+An integer n is a power of three, if there exists an integer x such that n == 3x.
+
+ 
+
+Example 1:
+
+Input: n = 27
+Output: true
+Example 2:
+
+Input: n = 0
+Output: false
+Example 3:
+
+Input: n = 9
+Output: true
+Example 4:
+
+Input: n = 45
+Output: false*/
+
+//Solution
+class Solution {
+    public boolean isPowerOfThree(int n) {
+        if(n==0) return false;
+        if(n==1) return true;
+        if(n>1){
+            return findPower(n);
+        }
+        
+        return false;
+    }
+    public boolean findPower(int n) {
+        if(n%3!=0)
+            return false;
+        if(n==3)
+            return true;
+        return findPower(n/3);    
+    }
+}
