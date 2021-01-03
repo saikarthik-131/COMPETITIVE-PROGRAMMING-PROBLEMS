@@ -1,2 +1,2 @@
 # COMPETITIVE-PROGRAMMING-PROBLEMS
-## Problems solved from LeetCode, Hacker rank, GFG in Easy, Medium and Hard Levels
+## Problems solved from LeetCode, Hacker rank, GFG for Easy, Medium and Hard Levels
